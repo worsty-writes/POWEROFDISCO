@@ -102,6 +102,7 @@ if _hp == 0 {
 	if _slowdown == true {
 		global._shakein = true;
 		sprite_index = spr_playerdying;
+		layer_set_visible(layer_get_id("tint5"), true);
 		game_set_speed(30, gamespeed_fps);
 		audio_stop_sound(snd_righton);
 		audio_play_sound(snd_slowdown, 3, false);

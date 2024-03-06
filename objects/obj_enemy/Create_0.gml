@@ -12,7 +12,7 @@ _canshoot = false;
 
 alarm[0] = 60;
 
-alarm[1] = irandom_range(1, 600);
+alarm[1] = irandom_range(120, 600);
 
 _ran_direction = [0, 90, 180, 270];
 

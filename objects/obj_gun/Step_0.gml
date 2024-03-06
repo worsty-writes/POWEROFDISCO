@@ -27,8 +27,7 @@ if global._gameover == false {
 			var _bullet = instance_create_layer(x,y, "bulletsandbars", obj_bullet);
 			var _shadow = instance_create_depth(obj_gun.x +32, obj_gun.y, +1, obj_shadow);
 			instance_create_depth(x, y, -1, obj_shine);
-			instance_create_depth(x, y, +1, obj_fire);
-			instance_create_depth(obj_gun.x, obj_gun.y, -1, obj_shine);
+			instance_create_depth(x, y, -1, obj_fire);
 			global._shakein = true
 			alarm[1] = 30;
 			audio_play_sound(_angel_sounds[irandom_range(0, 2)], 2, false, 1, 0, random_range(0.9, 1.2));

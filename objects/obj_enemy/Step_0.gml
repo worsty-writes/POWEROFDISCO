@@ -62,7 +62,7 @@ if global._gameover == false {
 	}
 
 	if _canshoot == true {
-		alarm[1]  = irandom_range(60, 300);
+		alarm[1]  = irandom_range(60, 600);
 		_shooting = true;
 		var _bullet = instance_create_layer(x,y, "bulletsandbars", obj_enemybullet);
 		audio_play_sound(_enemy_sounds[irandom_range(0, 2)], 2, false, 1, 0, random_range(0.9, 1.2));
