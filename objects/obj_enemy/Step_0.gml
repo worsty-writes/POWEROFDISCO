@@ -1,7 +1,12 @@
 if global._gameover == false {
 
 	if _hp == 0 {
-		instance_destroy()
+		if _deadenemy = true {
+			instance_create_depth(x, y, -1, obj_deadenemy);
+			audio_play_sound(_deathsound[irandom_range(0, 1)], 2, false, 1, 0, random_range(0.9, 1.2))
+			_deadenemy = false;
+		}
+		instance_destroy();
 	}
 
 	if _modeswitch = true {

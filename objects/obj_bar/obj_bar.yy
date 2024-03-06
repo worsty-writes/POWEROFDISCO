@@ -1,7 +1,11 @@
 {
   "$GMObject":"",
   "%Name":"obj_bar",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_enemybullet","path":"objects/obj_enemybullet/obj_enemybullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_bar",
   "overriddenProperties":[],
@@ -31,6 +35,9 @@
     "name":"Bar_Mid",
     "path":"sprites/Bar_Mid/Bar_Mid.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Bar_End",
+    "path":"sprites/Bar_End/Bar_End.yy",
+  },
   "visible":true,
 }

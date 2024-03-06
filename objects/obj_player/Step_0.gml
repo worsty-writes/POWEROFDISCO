@@ -97,40 +97,8 @@ if _hp > 0 {
 			y += 0;
 		}
 	}
-	if place_meeting(x, y, obj_esplode) {
-		// Collide event with obj_Enemy
-		var _knockback_Speed = 10; // Adjust the knockback speed as needed
-
-		// Calculate the direction from the enemy to the player
-		var _dir = point_direction(x, y, obj_esplode.x, obj_esplode.y);
-
-		// Calculate the knockback vector
-		var knockbackX = lengthdir_x(_knockback_Speed, _dir);
-		var knockbackY = lengthdir_y(_knockback_Speed, _dir);
-
-		// Apply the knockback to the player's position
-		obj_player.x += knockbackX;
-		obj_player.y += knockbackY;
-	}
-	if place_meeting(x, y, obj_enemy) {
-		// Collide event with obj_Enemy
-		var _knockback_Speed = 5; // Adjust the knockback speed as needed
-
-		// Calculate the direction from the enemy to the player
-		var _dir = point_direction(x, y, obj_enemy.x, obj_enemy.y) + 180;
-
-		// Calculate the knockback vector
-		var knockbackX = lengthdir_x(_knockback_Speed, _dir);
-		var knockbackY = lengthdir_y(_knockback_Speed, _dir);
-
-		// Apply the knockback to the player's position
-		global._canmove = false;
-		obj_player.x += knockbackX;
-		obj_player.y += knockbackY;
-		global._canmove = true;
-	}
 }
-if _hp <= 0 {
+if _hp == 0 {
 	if _slowdown == true {
 		global._shakein = true;
 		sprite_index = spr_playerdying;
@@ -138,7 +106,7 @@ if _hp <= 0 {
 		audio_stop_sound(snd_righton);
 		audio_play_sound(snd_slowdown, 3, false);
 		show_debug_message("Alarm activated");
-		alarm_set(0, 120);
+		alarm_set(0, 90);
 		_slowdown = false;
 	}
 	global._gameover = true;
@@ -158,4 +126,37 @@ if _hp <= 0 {
 	{
 		y += 0;
 	}
+}
+
+if place_meeting(x, y, obj_esplode) {
+// Collide event with obj_Enemy
+	var _knockback_Speed = 10; // Adjust the knockback speed as needed
+
+		// Calculate the direction from the enemy to the player
+	var _dir = point_direction(x, y, obj_esplode.x, obj_esplode.y);
+
+		// Calculate the knockback vector
+	var knockbackX = lengthdir_x(_knockback_Speed, _dir);
+	var knockbackY = lengthdir_y(_knockback_Speed, _dir);
+
+		// Apply the knockback to the player's position
+	obj_player.x += knockbackX;
+	obj_player.y += knockbackY;
+}
+if place_meeting(x, y, obj_enemy) {
+		// Collide event with obj_Enemy
+	var _knockback_Speed = 10; // Adjust the knockback speed as needed
+
+		// Calculate the direction from the enemy to the player
+	var _dir = point_direction(x, y, obj_enemy.x, obj_enemy.y) + 180;
+
+		// Calculate the knockback vector
+	var knockbackX = lengthdir_x(_knockback_Speed, _dir);
+	var knockbackY = lengthdir_y(_knockback_Speed, _dir);
+
+		// Apply the knockback to the player's position
+	global._canmove = false;
+	obj_player.x += knockbackX;
+	obj_player.y += knockbackY;
+	global._canmove = true;
 }

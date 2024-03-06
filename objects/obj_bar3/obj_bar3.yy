@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_bar3",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_bar3",
   "overriddenProperties":[],
@@ -31,6 +34,9 @@
     "name":"Bar_End2",
     "path":"sprites/Bar_End2/Bar_End2.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"Bar_End",
+    "path":"sprites/Bar_End/Bar_End.yy",
+  },
   "visible":true,
 }
