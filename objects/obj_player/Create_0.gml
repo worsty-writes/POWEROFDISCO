@@ -21,3 +21,5 @@ global._gameover = false;
 _slowdown = true;
 
 _damaged = false;
+
+_gethit = [snd_bullethitplayer1, snd_bullethitplayer2, snd_bullethitplayer3];

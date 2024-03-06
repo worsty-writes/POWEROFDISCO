@@ -97,7 +97,7 @@ if _hp > 0 {
 			y += 0;
 		}
 	}
-	if place_meeting(x, y, obj_enemybullet) or place_meeting(x, y, obj_esplode) {
+	if place_meeting(x, y, obj_esplode) {
 		// Collide event with obj_Enemy
 		var _knockback_Speed = 10; // Adjust the knockback speed as needed
 
@@ -133,10 +133,12 @@ if _hp > 0 {
 if _hp <= 0 {
 	if _slowdown == true {
 		global._shakein = true;
+		sprite_index = spr_playerdying;
 		game_set_speed(30, gamespeed_fps);
-		audio_sound_pitch(snd_righton, 0.75);
+		audio_stop_sound(snd_righton);
+		audio_play_sound(snd_slowdown, 3, false);
 		show_debug_message("Alarm activated");
-		alarm_set(0, 60);
+		alarm_set(0, 120);
 		_slowdown = false;
 	}
 	global._gameover = true;
@@ -156,5 +158,4 @@ if _hp <= 0 {
 	{
 		y += 0;
 	}
-	sprite_index = spr_playerdead;
 }
