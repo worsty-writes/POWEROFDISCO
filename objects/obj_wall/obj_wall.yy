@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block",
+  "%Name":"obj_wall",
   "eventList":[
     {"$GMEvent":"","%Name":"","eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_block",
+  "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
