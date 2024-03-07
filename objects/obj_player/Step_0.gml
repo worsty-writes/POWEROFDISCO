@@ -12,24 +12,23 @@ if _hp > 0 {
 			_moving = true
 			x += _walkspeed;
 		}
-		else if keyboard_check(ord("A")) && place_free(x - _collisionSpeed, y)
+		if keyboard_check(ord("A")) && place_free(x - _collisionSpeed, y)
 		{
 			_moving = true
 			x -= _walkspeed;
 		}
-		else if keyboard_check(ord("W")) && place_free(x, y - _collisionSpeed)
+		if keyboard_check(ord("W")) && place_free(x, y - _collisionSpeed)
 		{
 			_moving = true
 			y -= _walkspeed;
 		}
-		else if keyboard_check(ord("S")) && place_free(x, y + _collisionSpeed)
+		if keyboard_check(ord("S")) && place_free(x, y + _collisionSpeed)
 		{
 			_moving = true;
 			y += _walkspeed;
 		}
-		else
-		{
-			_moving = false
+		if x == xprevious and y == yprevious {
+			_moving = false;
 		}
 		
 		if _damaged == false {
