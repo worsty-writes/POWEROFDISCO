@@ -1,2 +1,1 @@
-/// @description Insert description here
-// You can write your code in this editor
+instance_find(obj_player, 0).take_knockback(id.x, id.y, 0.01);

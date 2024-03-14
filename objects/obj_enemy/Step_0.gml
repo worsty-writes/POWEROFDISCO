@@ -1,6 +1,16 @@
+//some fun variables 
+var _distance_player = distance_to_object(obj_player);
+var _hearing_dist = (_distance_player / _max_hearing_distance);
+
 if global._gameover == false {
 
 	if _hp == 0 {
+		if place_meeting(x, y, obj_player) {
+			depth = 600;
+		}
+		else {
+			depth = 799;
+		}
 		if _deadenemy = true {
 			instance_create_depth(x, y, -1, obj_deadenemy);
 			audio_play_sound(_deathsound[irandom_range(0, 1)], 2, false, 1, 0, random_range(0.9, 1.2))
@@ -8,85 +18,85 @@ if global._gameover == false {
 		}
 		instance_destroy();
 	}
+	if(point_in_rectangle(obj_player.x, obj_player.y, x-_dr, y-_dr, x+_dr, y+_dr)) {
+		if _modeswitch = true {
+			_mode = _random_mode[irandom_range(0, 4)];
+			alarm[0] = irandom_range(120, 600);
+			_modeswitch = false
+		}
 
-	if _modeswitch = true {
-		show_debug_message("we're switching modes!");
-		_mode = _random_mode[irandom_range(0, 4)];
-		alarm[0] = irandom_range(120, 600);
-		_modeswitch = false
-	}
+		if _mode == 1 or _mode == 4 or _mode == 5 {
+			speed = random_range(0.5, 3);
+			direction = point_direction(x, y, obj_player.x, obj_player.y);
+		}
+		else if _mode == 2 {
+			speed = random_range(0.5, 3);
+			direction = (point_direction(x, y, obj_player.x, obj_player.y)) + 180;
+		}
+		else if _mode == 3 {
+			 speed = 0;
+		}
 
-	if _mode == 1 or _mode == 4 or _mode == 5 {
-		speed = random_range(0.5, 3);
-		direction = point_direction(x, y, obj_player.x, obj_player.y);
-	}
-	else if _mode == 2 {
-		speed = random_range(0.5, 3);
-		direction = (point_direction(x, y, obj_player.x, obj_player.y)) + 180;
-	}
-	else if _mode == 3 {
-		 speed = 0;
-	}
-
-	if _damaged == false {
-		if (hspeed > 0) {
-			image_xscale = -1;
-			if _shooting == true {
-				sprite_index = spr_enemymovingshooting;
+		if _damaged == false {
+			if (hspeed > 0) {
+				image_xscale = -1;
+				if _shooting == true {
+					sprite_index = spr_enemymovingshooting;
+				}
+				if _shooting = false {
+					sprite_index = spr_enemymoving;
+				}
 			}
-			if _shooting = false {
-				sprite_index = spr_enemymoving;
+			else if (hspeed < 0){
+				image_xscale = 1;
+				if _shooting == true {
+					sprite_index = spr_enemymovingshooting;
+				}
+				if _shooting == false {
+					sprite_index = spr_enemymoving;
+				}
+			}
+			else {
+				image_xscale = 1;
+				if _shooting == true {
+					sprite_index = spr_enemystillshoot;
+				}
+				if _shooting == false {
+					sprite_index = spr_enemystill;
+				}
 			}
 		}
-		else if (hspeed < 0){
-			image_xscale = 1;
-			if _shooting == true {
-				sprite_index = spr_enemymovingshooting;
-			}
-			if _shooting == false {
-				sprite_index = spr_enemymoving;
-			}
+		if _damaged == true {
+			sprite_index = spr_enemydamaged
 		}
-		else {
-			image_xscale = 1;
-			if _shooting == true {
-				sprite_index = spr_enemystillshoot;
-			}
-			if _shooting == false {
-				sprite_index = spr_enemystill;
-			}
+
+		if _canshoot == true {
+			alarm[1]  = irandom_range(60, 600);
+			_shooting = true;
+			var _bullet = instance_create_layer(x,y, "bulletsandbars", obj_enemybullet);
+			audio_play_sound(_enemy_sounds[irandom_range(0, 2)], 2, false, _hearing_dist, 0, random_range(0.9, 1.2));
+			_bullet.direction = point_direction(x, y, obj_player.x, obj_player.y);
+			_bullet.image_angle = image_angle;
+			_bullet.speed = 7;
+			_shooting = false;
+			_canshoot = false;
 		}
-	}
-	if _damaged == true {
-		sprite_index = spr_enemydamaged
-	}
 
-	if _canshoot == true {
-		alarm[1]  = irandom_range(60, 600);
-		_shooting = true;
-		var _bullet = instance_create_layer(x,y, "bulletsandbars", obj_enemybullet);
-		audio_play_sound(_enemy_sounds[irandom_range(0, 2)], 2, false, 1, 0, random_range(0.9, 1.2));
-		_bullet.direction = point_direction(x, y, obj_player.x, obj_player.y);
-		_bullet.image_angle = image_angle;
-		_bullet.speed = 7;
-		_shooting = false;
-		_canshoot = false;
-	}
+		if place_meeting(x, y, obj_bullet) or place_meeting(x, y, obj_esplode) {
+			// Collide event with obj_Enemy
+			var _knockback_Speed = 10; // Adjust the knockback speed as needed
 
-	if place_meeting(x, y, obj_bullet) or place_meeting(x, y, obj_esplode) {
-		// Collide event with obj_Enemy
-		var _knockback_Speed = 10; // Adjust the knockback speed as needed
+			// Calculate the direction from the enemy to the player
+			var _dir = point_direction(x, y, obj_player.x, obj_player.y) + 180;
 
-		// Calculate the direction from the enemy to the player
-		var _dir = point_direction(x, y, obj_player.x, obj_player.y) + 180;
+			// Calculate the knockback vector
+			var knockbackX = lengthdir_x(_knockback_Speed, _dir);
+			var knockbackY = lengthdir_y(_knockback_Speed, _dir);
 
-		// Calculate the knockback vector
-		var knockbackX = lengthdir_x(_knockback_Speed, _dir);
-		var knockbackY = lengthdir_y(_knockback_Speed, _dir);
-
-		// Apply the knockback to the player's position
-		x += knockbackX;
-		y += knockbackY;
+			// Apply the knockback to the player's position
+			x += knockbackX;
+			y += knockbackY;
+		}
 	}
 }
 if global._gameover == true {

@@ -8,8 +8,8 @@
   "name":"obj_partyover",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"GameManage",
+    "path":"folders/Objects/GameManage.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite41",
-    "path":"sprites/Sprite41/Sprite41.yy",
+    "name":"spr_bigparty",
+    "path":"sprites/spr_bigparty/spr_bigparty.yy",
   },
   "spriteMaskId":null,
   "visible":true,

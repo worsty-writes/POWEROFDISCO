@@ -6,8 +6,8 @@
   "name":"obj_continue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"GameManage",
+    "path":"folders/Objects/GameManage.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite42",
-    "path":"sprites/Sprite42/Sprite42.yy",
+    "name":"spr_partyover",
+    "path":"sprites/spr_partyover/spr_partyover.yy",
   },
   "spriteMaskId":null,
   "visible":true,

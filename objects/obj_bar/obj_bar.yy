@@ -10,8 +10,8 @@
   "name":"obj_bar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Decorations",
+    "path":"folders/Decorations.yy",
   },
   "parentObjectId":null,
   "persistent":false,

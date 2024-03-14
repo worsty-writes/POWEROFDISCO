@@ -11,8 +11,8 @@
   "name":"obj_wallside",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Misc.",
+    "path":"folders/Objects/Misc..yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,9 +33,12 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
+  },
+  "spriteMaskId":{
     "name":"spr_block2",
     "path":"sprites/spr_block2/spr_block2.yy",
   },
-  "spriteMaskId":null,
   "visible":true,
 }

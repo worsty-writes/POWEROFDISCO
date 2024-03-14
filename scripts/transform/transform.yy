@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"transform",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"transform",
+  "parent":{
+    "name":"FC_DialogueSystem",
+    "path":"folders/Scripts/FC_DialogueSystem.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

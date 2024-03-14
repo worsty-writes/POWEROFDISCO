@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_enemydead",
   "bboxMode":2,
-  "bbox_bottom":35,
+  "bbox_bottom":0,
   "bbox_left":0,
   "bbox_right":99,
   "bbox_top":0,

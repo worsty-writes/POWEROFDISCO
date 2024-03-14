@@ -28,8 +28,7 @@ if global._gameover == false {
 			var _shadow = instance_create_depth(obj_gun.x +32, obj_gun.y, +1, obj_shadow);
 			instance_create_depth(x, y, -1, obj_shine);
 			instance_create_depth(x, y, -1, obj_fire);
-			global._shakein = true
-			alarm[1] = 30;
+			obj_camshakeit.screen_shake(7, 30);
 			audio_play_sound(_angel_sounds[irandom_range(0, 2)], 2, false, 1, 0, random_range(0.9, 1.2));
 			_bullet.direction = point_direction(x, y, mouse_x + random_range(-_shot_random, _shot_random), mouse_y + random_range(-_shot_random, _shot_random));
 			_bullet.image_angle = image_angle;
@@ -43,3 +42,4 @@ if global._gameover == false {
 if global._gameover = true {
 	sprite_index = spr_glowingcross2;
 }
+

@@ -13,8 +13,8 @@
   "name":"obj_dagroove",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"GameManage",
+    "path":"folders/Objects/GameManage.yy",
   },
   "parentObjectId":null,
   "persistent":false,

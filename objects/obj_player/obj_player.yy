@@ -34,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":true,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_playerstillleft",
+    "path":"sprites/spr_playerstillleft/spr_playerstillleft.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

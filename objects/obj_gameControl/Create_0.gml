@@ -6,3 +6,5 @@ layer_set_visible(layer_get_id("ScreenShake"), false)
 
 global._dead = false;
 _stupid = true;
+
+global._gameover = false;

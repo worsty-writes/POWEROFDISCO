@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"make_player_move",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"make_player_move",
+  "parent":{
+    "name":"FC_DialogueSystem",
+    "path":"folders/Scripts/FC_DialogueSystem.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

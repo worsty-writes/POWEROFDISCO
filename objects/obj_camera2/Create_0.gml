@@ -1,3 +1,12 @@
+_shake_duration = 240;
+_cooldown = true;
+
+//alarm[0] = _shake_duration; // set alarm
+
+_shakeit_amount = 3; //how much to shake intensity
+
+global._shakein = false
+
 _cam_width = 640;
 _cam_height = 360;
 

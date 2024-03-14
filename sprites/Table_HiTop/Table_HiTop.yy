@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"Table_HiTop",
-  "bboxMode":0,
-  "bbox_bottom":58,
-  "bbox_left":6,
-  "bbox_right":59,
-  "bbox_top":3,
+  "bboxMode":2,
+  "bbox_bottom":1,
+  "bbox_left":9,
+  "bbox_right":90,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":100,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8b59cd4b-456b-43ba-bce6-a606927c6512","blendMode":0,"displayName":"default","isLocked":false,"name":"8b59cd4b-456b-43ba-bce6-a606927c6512","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":100,
 }

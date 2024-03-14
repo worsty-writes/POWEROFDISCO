@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_playerleftmoonwalk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":99,
   "bbox_left":9,
   "bbox_right":91,
-  "bbox_top":1,
+  "bbox_top":5,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -18,8 +18,6 @@
     {"$GMSpriteFrame":"","%Name":"67268672-ae3d-451b-bd6d-b07685835458","name":"67268672-ae3d-451b-bd6d-b07685835458","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"4767f104-ba2a-4355-a7f2-020b07458e15","name":"4767f104-ba2a-4355-a7f2-020b07458e15","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"a2386079-2b89-4ecd-97af-3df4fc59a523","name":"a2386079-2b89-4ecd-97af-3df4fc59a523","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c65ebea7-8841-4d20-b198-be6cc2f5c25f","name":"c65ebea7-8841-4d20-b198-be6cc2f5c25f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"cbe355c6-237f-42fa-8634-72d3f528a20b","name":"cbe355c6-237f-42fa-8634-72d3f528a20b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -59,7 +57,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":8.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -96,12 +94,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a2386079-2b89-4ecd-97af-3df4fc59a523","path":"sprites/spr_playerleftmoonwalk/spr_playerleftmoonwalk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8e6e7ffa-0ef5-49a2-a529-6f8b69e8728b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c65ebea7-8841-4d20-b198-be6cc2f5c25f","path":"sprites/spr_playerleftmoonwalk/spr_playerleftmoonwalk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"80a558cd-b156-4b88-8c6d-172c90bb586b","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cbe355c6-237f-42fa-8634-72d3f528a20b","path":"sprites/spr_playerleftmoonwalk/spr_playerleftmoonwalk.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a7b04e29-473a-47a1-97c3-e7d8b7c44ed2","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
