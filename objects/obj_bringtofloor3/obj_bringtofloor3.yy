@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_nothing",
-    "path":"sprites/spr_nothing/spr_nothing.yy",
+    "name":"spr_moveup",
+    "path":"sprites/spr_moveup/spr_moveup.yy",
   },
   "spriteMaskId":null,
   "visible":true,

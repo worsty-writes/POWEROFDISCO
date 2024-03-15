@@ -35,7 +35,7 @@ spd = 2;
 reset_dialogue_defaults();
 myPortrait			= spr_portrait_disco;
 myVoice				= snd_voice2;
-myFont				= fnt_dialogue;
+myFont              = fnt_dialogue;
 myName				= "ABALAM";
 
 myPortraitTalk		= -1;

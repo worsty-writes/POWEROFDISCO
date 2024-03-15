@@ -15,4 +15,15 @@ _remaining_firerate = 0;
 _shot_random = 20
 _canshoot = false
 
-_angel_sounds = [snd_angel1, snd_angel2, snd_angel3];
+_angel_sounds = [snd_pianokey1, snd_pianokey2, snd_pianokey3];
+
+//portraits
+myPortrait			= spr_aeontalking;
+myVoice				= snd_voice1;
+myName				= "REUEL";
+
+myPortraitTalk		= -1;
+myFont              = fnt_dialogue;
+myPortraitTalk_x	= 26;
+myPortraitTalk_y	= 44;
+myPortraitIdle		= -1;

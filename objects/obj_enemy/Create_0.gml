@@ -1,5 +1,7 @@
 _hp = 3;
 
+_hearing_dist = 0;
+
 _max_hearing_distance = 800
 
 _random_mode = [1, 2, 3, 4, 5];

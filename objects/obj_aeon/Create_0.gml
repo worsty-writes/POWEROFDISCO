@@ -7,7 +7,7 @@ myPortrait			= spr_aeontalking;
 myVoice				= snd_voice1;
 myName				= "REUEL";
 
-myPortraitTalk		= spr_portrait_examplechar_mouth;
+myPortraitTalk		= -1;
 myPortraitTalk_x	= 26;
 myPortraitTalk_y	= 44;
 myPortraitIdle		= -1;
