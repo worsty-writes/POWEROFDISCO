@@ -12,5 +12,8 @@ function make_player_move(_fact){
 		if object_exists(obj_enterroom2) {	
 			instance_destroy(obj_enterroom2);
 		}
+		if object_exists(obj_enterroomstart) {	
+			instance_destroy(obj_enterroomstart);
+		}
 	}
 }

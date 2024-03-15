@@ -13,4 +13,4 @@ mySpeaker[3] = obj_gun;
 
 myText[4] = "Well, hey, if the place is full of pigs, I say we make some bacon.";
 mySpeaker[4] = obj_player;
-myScripts[4] = [make_player_move, true]
+myScripts[4] = [make_player_move, true];
