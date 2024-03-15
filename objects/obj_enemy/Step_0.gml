@@ -19,7 +19,7 @@ if global._gameover == false {
 		}
 		instance_destroy();
 	}
-	if(point_in_rectangle(obj_player.x, obj_player.y, x-_dr, y-_dr, x+_dr, y+_dr)) {
+	if(point_in_rectangle(obj_player.x, obj_player.y, x-400, y-225, x+400, y+225)) {
 		if _modeswitch = true {
 			_mode = _random_mode[irandom_range(0, 4)];
 			alarm[0] = irandom_range(120, 600);

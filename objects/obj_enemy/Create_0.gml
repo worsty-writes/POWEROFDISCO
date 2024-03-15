@@ -29,5 +29,3 @@ _damaged = false
 _deadenemy = true;
 
 _deathsound = [snd_doesnotcompute, snd_error];
-
-_dr = 400;
