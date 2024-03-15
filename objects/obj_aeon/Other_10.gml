@@ -14,6 +14,7 @@ switch(_readyforgun){
 		i++;
 		myText[i]		= "Really, Ruey? And here I thought I had a pretty solid repuatation in the field of 'convincing my friends to do stupid shit for me.'";
 		mySpeaker[i]	= obj_player;
+		myEmotion[i]	= 3;
 		
 		//Line 2
 		i++;
@@ -29,6 +30,7 @@ switch(_readyforgun){
 		i++;
 		myText[i]		= "Ruey baby, angel, my most favorite sentient weapon in the whole wide multiverse-";
 		mySpeaker[i]	= obj_player;
+		myEmotion[i]	= 3;
 		
 		//Line 5
 		i++;
@@ -40,6 +42,7 @@ switch(_readyforgun){
 		myText[i]		= "Do you really think the Drones in there are gonna catch me? I'm Abalam, Voted Hell's Sexiest DJ since 1 AD, baby.";
 		myEmotion[i]	= 1;
 		mySpeaker[i]    = obj_player;
+		myEmotion[i]	= 0;
 
 		//Line 7
 		i++;
@@ -52,6 +55,7 @@ switch(_readyforgun){
 		myText[i]		= "Whatever, man. They're Lesser Angels, and even worse, they're NERDS.";
 		myEmotion[i]	= 0;
 		mySpeaker[i]    = obj_player;
+		myEmotion[i]	= 4;
 	
 //line 9
 		
@@ -73,7 +77,7 @@ switch(_readyforgun){
 //line 12
 		i++;
 		myText[i]		= "Swear it on my mama (AKA the vat of acid I spawned from).";
-		myEmotion[i]	= 0;
+		myEmotion[i]	= 1;
 		mySpeaker[i]    = obj_player;
 //line 17
 		i++;

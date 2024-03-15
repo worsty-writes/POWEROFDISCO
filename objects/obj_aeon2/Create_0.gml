@@ -15,4 +15,5 @@ myPortraitIdle		= -1;
 
 //-------OTHER
 global._haswheel = false;
+global._hasgun = false;
 _readyforgun	= -1;	//the variable we change depending on the player's choice in dialogue

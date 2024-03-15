@@ -20,6 +20,6 @@ if(point_in_rectangle(playerobject.x, playerobject.y, x-dr, y-dr, x+dr, y+dr)){
 //	}
 //}
 }
-if global._hasgun == true {
+if global._haswheel == true {
 	instance_destroy();
 }
