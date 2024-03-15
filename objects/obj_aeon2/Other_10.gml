@@ -35,7 +35,7 @@ myText[i]		= "Hi. Hello. What's going on over here?";
 mySpeaker[i]	= obj_player;
 
 i++;
-myText[i]		= "Ugh, back during The Crusades, Hariel here was promoted to HR while I was got put on The Miracle Council.";
+myText[i]		= "Ugh, back during The Crusades, Hariel here was promoted to Head of HR while I was got put on The Miracle Council.";
 mySpeaker[i]	= obj_gun;
 
 i++;
